@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.converter.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <Button
+        android:id="@+id/Convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Reset"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="108dp"
+        android:text="convert" />
+
+    <Button
+        android:id="@+id/Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Convert"
+        android:layout_alignLeft="@+id/Value1"
+        android:layout_marginBottom="33dp"
+        android:layout_marginLeft="56dp"
+        android:text="reset" />
+
+    <EditText
+        android:id="@+id/Value2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Reset"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="Lbs" />
+
+    <EditText
+        android:id="@+id/Value1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Value2"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint=" kgs" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Reset"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:text="Inkgs" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Value2"
+        android:layout_alignLeft="@+id/Reset"
+        android:layout_marginBottom="20dp"
+        android:text="InLbs" />
+
+   
+        
+
+</RelativeLayout>
+
